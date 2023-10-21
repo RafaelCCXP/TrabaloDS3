@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{57C0F8FB-0CDB-48C0-A9A6-0500B223EB1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DarkSoulsIII</RootNamespace>
+    <AssemblyName>DarkSoulsIII</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Curiosidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curiosidades.Designer.cs">
+      <DependentUpon>Curiosidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Historia.Designer.cs">
+      <DependentUpon>Historia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personagens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personagens.Designer.cs">
+      <DependentUpon>Personagens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Curiosidades.resx">
+      <DependentUpon>Curiosidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Historia.resx">
+      <DependentUpon>Historia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personagens.resx">
+      <DependentUpon>Personagens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cavaleiro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercenario.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUerreiro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arauto.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ladrao.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assassino.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feiticeiro.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piromante.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clerico.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Despojado.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DescClasseESQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DescClasseDIR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cavaleiro1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mercenario1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GUerreiro1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Arauto1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ladrao1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Assassino1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feiticeiro1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piromante1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Clerico1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Despojado1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IudexGundyr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vordt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GrandeMadeira.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SabioCristal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vigilantes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Diaconos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wolnir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReiDemonio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sulyvahn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Yhorm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aldritch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dancarina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArmaduraMatadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Oceiros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CampeaomGundyr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lothric.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wyvern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReiSemNome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlmaDasCinzas.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Personagens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SIegward.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gael.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrceirosAntes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrceirosComBB.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GaelAntes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GaelDepois.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Audio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Play1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplashScreen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ludleth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aldrich.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CaminhoAzul.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SentinelasAzuis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GuerreiroSol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Farron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rosaria.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pause1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FIrekeeper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoPrinci.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FundoPrinci2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
